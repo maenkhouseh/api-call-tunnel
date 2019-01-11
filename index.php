@@ -32,7 +32,7 @@ switch ($content_type) {
         $response->query = $query;
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/x-www-form-urlencoded']); 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonString);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $query);
         break;
     default:
         # code...
